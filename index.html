@@ -1,0 +1,167 @@
+<html><head> 
+</head> 
+<body style ="background-color :purple"> 
+<marquee behavior ="slide"><font size="35"><font color ="white"> DATA WAREHOUSE , DATA MINING </font></marquee><br>
+<h2> 
+<nav> 
+<font color ="white"><a href="C:\Users\Admin\Downloads\stc1.html#spatial"> SPATIAL DATABASES AND TEXT DATABASES </a></font>| 
+<font color ="white"><a href="C:\Users\Admin\Downloads\stc1.html#outliers"> OUTLIERS ANALYSIS </a></font>| 
+<font color ="white"><a href="C:\Users\Admin\Downloads\stc1.html#dwh"> DATA WAREHOUSE </a></font>| 
+<font color ="white"><a href="C:\Users\Admin\Downloads\stc1.html#attributes"> ATTRIBUTES </a></font>| 
+<font color ="white"><a href="C:\Users\Admin\Downloads\stc1.html#olap"> OLAP </a></font>| 
+<font color ="white"><a href="C:\Users\Admin\Downloads\stc1.html#datamining"> DATA MINING TYPES </a></font> 
+ 
+ 
+</nav></h2> 
+<br><br>
+<section id="spatial" style="background-color :LightBlue"> 
+<a target="_blank" href="#Spatial databases">Spatial databases </a>,  text databases :<br>  spatial databases --- from  geo spatial consortium & used to draw 3d<br> 
+ geometric shapes , can add onto or modify existing 3d geometric shapes , observer re & endowed with 3d spatial indexes as HH Code , Z order <br> 
+<a target="_blank" href="#Text databases"> Text databases </a> --- word documents  , text files , respond to Ad Hoc queries<br><br> 
+<a target="_blank" href="https://www.tutorialspoint.com/article/spatial-databases"><img src="https://www.tutorialspoint.com/assets/questions/images/97029-1532497066.png" alt="g" width="250" height="250"></a> 
+<br><br></section> 
+<br> 
+<section id="outliers" style ="background-color :white"> 
+Where the data has <a target="_blank" href="#outliers">outliers</a>  , decision tree induction is used and binary trees are pruned to offset this kind of data <br> 
+In pre – or post pruning , wherein post pruned trees are a reliable e.gs 
+A separate set of Tuples cannot be used to detect outliers as does not deal with training samples and does not address over fitted data<br>  
+Outliers analysis includes clustering or regression testing and  regression  testing is more preferred than clustering <br> 
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20250728113900581184/types_of_outliers.webp" alt="g" width="350" height="350"> 
+<br></section> 
+<br><br> 
+<section id ="dwh" style ="background-color :LightGreen"> 
+A data warehouse performs only query + analysis , dwh is essentially subject oriented , non volatile , integrated , time – variant ,<br> 
+ historical data . advocates BI  , there are some differences between a dwh and OLTP  database : <br><br> 
+<table width="60%" border="2"> 
+<thead><tr><th> 
+Dwh </th><th> 	Oltp</th></tr></thead> 
+
+
+<tbody><tr><td>  
+Query , analysis </td><td>   	Transactions processing </td></tr>
+<tr><td>De normalized tables</td> <td>  	Normalized tables</td></tr> 
+<tr><td>Historical data</td>  	<td>  Transient data </td></tr> 
+<tr><td>
+Advocates business intelligence </td><td>  	Index of transactions processing</td></tr> 
+<tr><td> 
+Slice and dice data </td> 	<td>  Unlike </td></tr> 
+<tr><td>
+Roll up data , drill down data </td> <td>  	Unlike</td></tr> 
+<tr><td> 
+Divided as real time , federated , distributed </td> 	<td>  Data marts etc</td></tr> 
+<tr><td> 
+e.gs Erwin , cognos, power builder , informatica </td>	<td>  e.gs data marts etc</td></tr> 
+<tr><td> 
+OLAP  based on dwh, performs faster indexing to precomputed summarized data </td><td>  	Unlike </td></tr> 
+</tbody> 
+</table> 
+
+
+A data warehouse has a 3 tier layered architecture that has foll. Layers :<ul type="square"><li>  bottom layer --- centralized RDBMS  servers and MD DBMS<br> 
+  ----- parallel processing , improved scalability </li> 
+<li> 
+Middle layer ---- OLAP  </li><li> 
+Top layer ----- user programs that respond to OLAP servers </li></ul> 
+<br><br> 
+<a target="_blank" href="https://www.geeksforgeeks.org/big-data/data-warehousing/"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20250127161828904427/data_warehouse-660.webp" alt="ghost" width="350" height="350"></a> 
+<br> 
+</section> 
+<br><br> 
+<section id="attributes" style ="background-color :white"> 
+<table width ="60%" border="2"> 
+<thead> 
+<tr> 
+<th> 
+Nominal attributes </th><th> 	Ordinal attributes </th><th> 	Interval attributes </th><th>	Ratio attributes</th></tr></thead> 
+
+<tbody> 
+<tr><td> 
+
+Data order is not imp though imp is differences in data intervals </td><td> 	Data order is imp though not imp is difference in data intervals </td> 
+<td> 	Imp is data order + difference in data intervals </td> 
+<td> 	Imp is data order , difference in data intervals and a 0.0 where 0.0 = none or no data </td></tr> 
+
+<tr><td> 
+e.gs blood collection units </td><td> 	e.gs socio economic status</td><td>  	----- </td><td> 	e.gs enzymes , concentrations , temperatures in Kelvin </td></tr> 
+</tbody> 
+</table> 
+</section> 
+<br><br> 
+<section id="olap" style ="background-color :black"> 
+<font color ="white"> 
+OLAP  --- performs query and analysis<br>  
+------ faster indexing to precomputed summarized data <br> 
+----- historical data <br> 
+------ de normalized tables<br>  
+----- operational intelligence <br> 
+------ slice and dice data <br> 
+----- roll up data , drill down data <br> 
+----- OLAP server architecture ---- ROLAP, MOLAP, HOLAP. ROLAP  more scalable less flexible than MOLAP<br>  
+------ e.gs  Erwin , cognos, power builder , informatica<br> 
+------ conformance to FASMI  principles <br><br>  
+
+
+OLAP servers consist of ROLAP , MOLAP , HOLAP . ROLAP servers more scalable and less flexible than MOLAP<br>  
+MOLAP where if numbers of dimensions of data cubes > 3 are poly cubes and storage in array multi –dimensional<br> 
+ storage search engines . MOLAP less scalable and more flexible than ROLAP <br> 
+HOLAP include greater scalability of ROLAP + greater flexibility of MOLAP servers <br><br> 
+
+
+Typical OLAP operations on multi – dimensional databases include : <br> 
+Roll up ----	From low level to high level abstraction in generalization or commonality of attributes <br> 
+Drill down ----	From high l.evel - low level abstraction  in specialization or specific attributes <br> 
+Slice & dice ----	Performs projection operations on dimensions of data cubes <br> 
+Pivot ---	Rotate and cross –tabulate data <br> 
+Sort data , select nominal attributes <br><br></font> 
+<br></section>
+<br><br> 
+<section id="datamining" style ="background-color :blue"> 
+<font color ="white"> 
+Associative rule mining <br> 
+	Finds frequent patterns + correlated data and uses support endowed with a support count ,<br> 
+ confidence where antecedent follows consequent & generic measure lift , that finds rule interestingness , 0 <lift <1.<br> 
+ All strong association rules are not interesting and correlation does not imply causation .<br> 
+ Apriori property => mean of sum of sequential patterns < sequential subpatterns . apriori algorithm uses join + prune , where in “join”,<br> 
+ it links each of k +1 items from k – data to itself , thereafter in “prune”, iterates in k numbers of passes  <br><br> 
+
+Classification<br> 
+ 	Discrete unordered data deals with , causes grouping of similar data .<br> 
+ unlike eager type , lazy classification = unsupervised learning  where target attributes / end result not explicit .<br> 
+ unlike eager classifiers lazy classifiers deal with complex data e.gs of eager classifiers ---- Bayesian, decision trees ,<br> 
+ e.gs of lazy classifiers ----- clustering , CBR<br><br> 
+
+Regression <br> 
+ 	Past e.gs , linear regression finds a st line between 1 predictor variable and 1 response variables, <br> 
+non –linear regression finds a quadratic equation between 2 or >2 independent predictors and 1 response variables<br><br> 
+
+
+Clustering <br> 
+	A hierarchical data decomposition, can be agglomerative , divisive , k means classification  --- that work on only labeled  data <br><br> 
+
+
+Outliers analysis <br> 
+	Where the data has outliers , decision tree induction is used and binary trees are pruned to offset this kind of data In pre – or post pruning ,<br>
+ wherein post pruned trees are a reliable e.gs 
+A separate set of Tuples cannot be used to detect outliers as does not deal with training samples and does not address over fitted data <br> 
+
+Outliers analysis includes clustering or regression testing and regression is more preferred than clustering 
+<br><br> 
+</font></section> 
+<br> 
+<br> <footer> 
+<h2><font color ="white"><a target="_blank" href="mailTo:ratulxx@gmail.com">ratulxx@gmail.com</a></font></h2> 
+</footer> 
+</body> 
+</html> 
+
+
+
+ 
+
+
+
+
+
+ 
+ 
+
